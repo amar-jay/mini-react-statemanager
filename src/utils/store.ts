@@ -19,10 +19,16 @@ const createStore = <T extends StateType>(initialState: T) => {
   }
 }
 
+interface countStates extends StateType {
+  count : number
+}
+
+
 interface buttonStates extends StateType {
   count : number
 }
 
+export const countStore:any = createStore({count: 0});
 export const buttonStore:any = createStore({count: 0});
 
 export const useStore = <T extends StateType>(store: StoreType<T>) => {
