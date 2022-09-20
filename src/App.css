@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  }
+
+.main {
+  font-size: large;
+  width: "100vw";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.col {
+  flex-direction: column;
+}
+.pad {
+  padding: "2px";
+  margin: "2px";
+}
+
+.title {
+  text-decoration: underline;
+}
